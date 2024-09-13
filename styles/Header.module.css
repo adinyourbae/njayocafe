@@ -1,0 +1,84 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: black;
+
+}
+.logout {
+    text-align: center;
+  }
+  
+  .logout button {
+    background-color: #ff5555;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .logout button:hover {
+    background-color: #cc0000;
+    transform: scale(1.1);
+  }
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    flex: 1;
+}
+
+.logo>span{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.menu{
+    flex:1;
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    justify-content: center;
+    z-index: 99;
+    font-weight: bold;
+    color: white;
+}
+
+.menu>li:hover{
+    cursor: pointer;
+    color: var(--themeRed)
+}
+
+.rightSide{
+    flex:1;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.cart{
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    z-index: 99;
+    background-color: black;
+}
+
+.badge{
+    position: absolute;
+    display: flex;
+    background-color: var(--themeRed);
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -0.5rem;
+}

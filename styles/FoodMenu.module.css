@@ -1,0 +1,58 @@
+/* styles/FoodMenu.module.css */
+.menuContainer {
+    padding: 50px 0;
+  }
+  
+  .menuSection {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menuSection:hover {
+    transform: translateY(-5px);
+  }
+  
+  .iconContainer {
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    padding: 20px;
+    margin-right: 20px;
+  }
+  
+  .iconContainer svg {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .menuSection:hover .title {
+    color: #4CAF50;
+  }
+  
+  .description {
+    font-size: 1.2em;
+    color: #666;
+    transition: color 0.3s ease;
+  }
+  
+  .menuSection:hover .description {
+    color: #333;
+  }
+  

@@ -1,0 +1,131 @@
+/* styles/OpeningSection.module.css */
+/* ... (css lainnya tetap sama) */
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animateContainer {
+  opacity: 0;
+  animation: fadeIn 1s forwards; /* Tambahkan animasi fadeIn */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* styles/OpeningSection.module.css */
+.openingContainer {
+  position: relative;
+  height: 100vh;
+  background:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:black;
+  text-align: start;
+  margin-bottom: 2rem;
+}
+
+.backgroundVideo {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:white;
+}
+
+/* ... (sisa CSS tetap sama) */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.leftColumn,
+.rightColumn {
+  flex: 1;
+  padding: 20px;
+  text-align: start;
+  animation: slideInLeft 1s ease-out; /* Tambahkan animasi slideInLeft */
+}
+
+.rightColumn {
+  flex: 1;
+  padding: 20px;
+  animation: slideInRight 1s ease-out; /* Tambahkan animasi slideInRight */
+}
+
+.openingContainer h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.openingContainer p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.orderButton {
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border-style: solid;
+  border-radius: 1rem;
+  cursor: pointer;
+  border-color: white;
+}
+
+.orderButton:hover {
+  background-color: white;
+  color: black;
+}
+
+.iconContainer {
+  position: absolute;
+  bottom: 20px;
+}

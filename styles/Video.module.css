@@ -1,0 +1,57 @@
+/* styles/Video.module.css */
+.main {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add a local class to the video element */
+.video-container video {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.contentContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.leftContent,
+.rightContent {
+  flex: 1;
+  color: #fff;
+  padding: 20px;
+}
+
+.leftContent h1 {
+  font-size: 2.5em;
+}
+
+.leftContent p {
+  font-size: 1.2em;
+}
+
+.rightContent h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.rightContent p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}

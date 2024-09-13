@@ -1,0 +1,16 @@
+/* components/CategorySection.module.css */
+.categorySection {
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  /* Tambahkan styling sesuai kebutuhan Anda */
+  .contentContainer {
+    /* Styling untuk konten di dalam container */
+  }
+  

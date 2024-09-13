@@ -1,0 +1,156 @@
+.container{
+    border-radius: 2rem;
+    display: flex;
+    position: relative;
+    background-image: url(../assets/b1.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 5rem;
+    background-color: rgba(0, 0, 0,.55);
+
+}
+
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cherryDiv{
+    display: flex;
+    text-transform: capitalize;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    background-color: black;
+    margin-top: 3rem;
+    padding: 1rem;
+    border-color: black;
+    border-style:solid ;
+    border-radius: 4rem;
+    font-size: 0.8rem;
+color: aliceblue;
+    font-weight: bold;
+    animation-name:initial;
+    animation-duration: 2s;
+    margin-left: 1rem;
+}
+
+.cherryDiv:hover {
+    transform: scale(1.1);
+}
+
+
+.heroText{
+    color: white;
+    text-shadow: black;
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    transition: step-end;
+    transition: ease-in-out;
+}
+
+.miniText{
+    width: 70%;
+    color: whitesmoke;
+    font-weight: 600;
+    padding-left: 1.5rem;
+}
+
+.btn{
+    padding: 1rem 2.5rem;
+    background-color:black;
+    border-radius: 4rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.right{
+    position: relative;
+}
+
+.ImageContainer{
+    width: 20px;
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+}
+
+.ContactUs{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: max-content;
+    padding: 1rem;
+    border-radius: 5rem;
+    top: 6rem;
+    left:6rem;
+    gap: 1rem;
+    box-shadow: var(--shadow);
+    color: white;
+    font-size: bold;
+}
+
+.ContactUs>div{
+    background: rgb(59,208,59);
+    border-radius: 50%;
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+}
+
+.ContactUs:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.Pizza{
+    display: flex;
+    gap: 1rem;
+    background-color: black;
+    box-shadow: var(--shadow);
+    padding: 0.6rem;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 4rem;
+    color: white;
+    left: 19rem;
+    width: max-content;
+}
+
+.Pizza>:nth-child(1)
+{
+    width: 6rem;
+    height: 4rem;
+    overflow: hidden;
+    border-radius: 6rem;
+}
+
+.Pizza>:nth-child(2)
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.Pizza:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}

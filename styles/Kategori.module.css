@@ -1,0 +1,93 @@
+/* styles/Kategori.module.css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Update openingContainer styling */
+  .openingContainer {
+    position: relative;
+    height: 100vh;
+    background: url('/background-image.jpg'); /* Ganti dengan path ke background image yang diinginkan */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .backgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .content {
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Jika ingin items wrap saat ukuran layar kecil */
+  }
+  
+  .leftColumn,
+  .rightColumn {
+    flex: 1;
+    padding: 20px;
+    text-align: start;
+  }
+  
+  .openingContainer h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .openingContainer p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .orderButton {
+    background-color: transparent;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-style: solid;
+    border-radius: 1rem;
+    cursor: pointer;
+    border-color: #000;
+  }
+  
+  .orderButton:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .iconContainer {
+    position: absolute;
+    bottom: 20px;
+  }
+  
+  /* Header styling */
+  /* Tambahkan styling header sesuai kebutuhan Anda */
+  
+  /* Menu styling */
+  /* Tambahkan styling menu sesuai kebutuhan Anda */
+  

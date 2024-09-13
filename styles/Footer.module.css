@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    margin-top: 6rem;
+}
+
+.container>span{
+    color: black;
+    font-weight: bold;
+}
+
+.logo{
+    display: flex;
+    justify-items: center; justify-content: center;
+    gap: 0.5rem;
+}
+
+.logo>span{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.social{
+    display: flex;
+    gap: 1rem;
+}
+
+.social>*{
+    fill: white
+    ;
+}
